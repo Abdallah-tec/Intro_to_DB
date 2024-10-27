@@ -4,9 +4,9 @@ CREATE TABLE Books(
 book_id INT PRIMARY KEY,
 title VARCHAR(130),
 author_id INT,
-FOREIGN KEY(author_id) REFERENCES AUTHORS(author_id)
+FOREIGN KEY(author_id) REFERENCES Authors(author_id)
 );
-CREATE TABLE AUTHORS(
+CREATE TABLE Authors(
 author_id INT PRIMARY KEY,
 author_name VARCHAR(215)
 );
